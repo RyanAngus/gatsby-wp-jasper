@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import * as styles from '../../styles/blog.module.css'
+import  '../../styles/global.css'
 import { graphql } from 'gatsby';
 
 

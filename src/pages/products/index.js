@@ -3,6 +3,8 @@ import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import Product from './Product';
 import * as styles from '../../styles/products.module.css'
+import  '../../styles/global.css'
+
 
 
 const Products = () => {

@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import * as styles from '../styles/home.module.css' 
+import  '../styles/global.css'
 
 export default function Home() {
   
