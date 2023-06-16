@@ -1,12 +1,14 @@
 import React from 'react';
-import Layout from '../../components/Layout';
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
 import * as styles from '../../styles/blog.module.css'
 import { graphql } from 'gatsby';
 
 
 const Blog = ({ data }) => {
   return (
-    <Layout>
+    <div>
+    <Navbar />
       <div className={styles.blog}>
         <h2 className={styles.title}>Blog Posts</h2>
         {data.allWpPost.nodes.map((node) => (
@@ -21,7 +23,8 @@ const Blog = ({ data }) => {
           </div>
         ))}
       </div>
-    </Layout>
+    <Footer />
+    </div>
   );
 };
  

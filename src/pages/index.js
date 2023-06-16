@@ -1,12 +1,14 @@
 import React from "react"
 import { Link } from 'gatsby'
-import Layout from "../components/Layout"
+import Navbar from "../components/Navbar"
+import Footer from "../components/Footer"
 import * as styles from '../styles/home.module.css' 
 
 export default function Home() {
   
   return (
-    <Layout>
+    <div>
+    <Navbar />
       <section className={styles.header}>
         <div>
           <h2>Hi!</h2>
@@ -16,6 +18,7 @@ export default function Home() {
         </div>
         <img src="/jasper.jpg" alt="headshot of cat" style={{maxWidth: '75%'}} />
       </section>
-    </Layout>
+    <Footer />
+    </div>
   )
 }

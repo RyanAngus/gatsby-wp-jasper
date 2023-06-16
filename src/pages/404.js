@@ -1,15 +1,18 @@
 import React from 'react';
-import Layout from '../components/Layout';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 
 function NotFound() {
   return ( 
-    <Layout>
+    <div>
+    <Navbar />
     <div>
       <h1>404</h1>
       <p>This page doesn't exist!</p>
     </div>
-    </Layout>
+    <Footer />
+    </div>
    );
 }
 
