@@ -17,7 +17,7 @@ module.exports = {
          * The full URL of the WordPress site's GraphQL API.
          * Example : 'https://www.example-site.com/graphql'
          */
-        url: `https://soft-centaur-21e65b.netlify.app/graphql`,
+        url: `https://gatsby-jasper-blog.netlify.app/graphql`,
       },
     },
     
