@@ -20,6 +20,42 @@
 
 .productPage {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.25rem;
+}
+
+.productCard {
+  background-color: rgba(0,0,0, .1);
+  margin: 2rem;
+  border-radius: 12px;
+}
+
+.productCard:hover {
+  scale: 1.01;
+}
+
+.productTitle {
+  margin: 2rem;
+}
+
+.productThumbnail {
+ width: 400px;
+ height: 300px;
+}
+
+.productPrice {
+  margin: 2rem;
+}
+
+.productRating {
+  margin: 2rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+  border: 1px solid #D42990;
+  border-radius: 12px;
+}
+
+.productRating:hover {
+  border: 2px solid #D42990;
+  scale: 1.01;
 }

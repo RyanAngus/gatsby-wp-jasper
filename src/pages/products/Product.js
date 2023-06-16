@@ -24,8 +24,11 @@ export default function Product() {
     <div className={styles.productPage}>
       {items.map((item) => {
         return (
-          <div  key={item.id}>
-            <h1>{item.title}</h1>
+          <div className={styles.productCard}  key={item.id}>
+            <h1 className={styles.productTitle}>{item.title}</h1>
+            <img className={styles.productThumbnail} src={item.thumbnail}></img>
+            <h3 className={styles.productPrice}>Price: ${item.price}</h3>
+            <h4 className={styles.productRating}>Jasper's Rating: {item.rating} / 5 paws</h4>
           </div>
         );
       })}
