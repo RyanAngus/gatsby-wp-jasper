@@ -1,6 +1,6 @@
 
 .blog {
-  text-align: center;
+  text-align: left;
 }
 .blog > h2 {
   font-size: 3rem;
@@ -11,19 +11,23 @@
   font-weight: 400;
 }
 
-.projects {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 80px;
-  margin: 80px 20px;
-}
-.projects h3 {
-  text-align: center;
-  margin: 20px auto 0px;
-  font-weight: 500;
-}
-.projects p {
-  color: #ccc;
-  margin-top: 4px;
+.title {
+text-align: center;
+border: 1px solid #fff;
+border-radius: 6px;
+padding: 1rem;
 }
 
+.postTitle {
+margin-top: 1rem;
+margin-bottom: 2rem;
+}
+
+.postImage {
+width: 400px;
+border-radius: 12px;
+}
+
+.postContent {
+  line-height: 2;
+}

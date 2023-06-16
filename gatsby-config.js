@@ -9,26 +9,18 @@
  */
 module.exports = {
   plugins: [
-    `gatsby-transformer-remark`,
+
+    {
+      resolve: `gatsby-source-wordpress`,
+      options: {
+        /*
+         * The full URL of the WordPress site's GraphQL API.
+         * Example : 'https://www.example-site.com/graphql'
+         */
+        url: `http://jasper.local/graphql`,
+      },
+    },
     
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        // The unique name for each instance
-        name: `projects`,
-        // Path to the directory
-        path: `${__dirname}/src/projects/`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        // The unique name for each instance
-        name: `images`,
-        // Path to the directory
-        path: `${__dirname}/src/images/`,
-      },
-    },
   
   ],
   siteMetadata: {

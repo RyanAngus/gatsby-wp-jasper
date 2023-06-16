@@ -11,3 +11,15 @@
   font-weight: 400;
 }
 
+.title {
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  padding: 1rem;
+  }
+
+.productPage {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
