@@ -17,7 +17,7 @@ module.exports = {
          * The full URL of the WordPress site's GraphQL API.
          * Example : 'https://www.example-site.com/graphql'
          */
-        url: `http://local.jasper/graphql`,
+        url: `http://gatsbyjasper.x10.mx/wp/graphql`,
       },
     },
     
