@@ -1,0 +1,70 @@
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+  align-items: center;
+}
+.header h2 {
+  font-size: 4em;
+}
+.header h3 {
+  font-size: 3em;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+
+img {
+  border-radius: 20px;
+}
+
+img:hover {
+  opacity: 80%;
+}
+
+
+.btn {
+  display: inline-block;
+  background: transparent;
+  padding: 10px 16px;
+  border: 3px solid #D42990;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-weight: 500;
+  position: relative;
+  
+}
+
+.btn:before {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  content: "";
+  padding: 20px 93px;
+  border: 2px solid #33b9ee;
+  border-radius: 10px;
+  left: -7px;
+  bottom: -7px;
+  
+  
+}
+
+.btn:hover:before {
+  padding: 0; /* set padding to 0 to make the element disappear */
+  bottom: 0; /* move the element up to align with the top button */
+  border: none; /* set border-radius to 10px to match the top button's appearance */
+  transition: 0.4s ease-in;
+  
+}
+
+.btn:before {
+  transition: 0.2s ease-out; /* add a separate transition rule */
+}
+
+.btn:hover {
+  background: #ec0f94;
+  color: #373B44;
+
+}
+
+
