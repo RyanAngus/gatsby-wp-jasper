@@ -14,7 +14,6 @@
   },
   "dependencies": {
     "gatsby": "^5.3.3",
-    "gatsby-plugin-netlify": "^5.1.0",
     "gatsby-source-filesystem": "^5.9.0",
     "gatsby-source-wordpress": "^7.11.0",
     "gatsby-transformer-remark": "^6.9.0",
@@ -27,5 +26,8 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "devDependencies": {
+    "gatsby-plugin-netlify": "^5.1.0"
   }
 }
