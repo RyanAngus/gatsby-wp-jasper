@@ -68,3 +68,43 @@ img:hover {
 }
 
 
+@media only screen and (max-width: 600px) {
+  
+  img {
+    width: 200px;
+  }
+
+  .btn {
+    display: inline-block;
+    background: transparent;
+    padding: 10px 16px;
+    border: 3px solid #D42990;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-weight: 500;
+    position: relative;
+    
+  }
+  
+  .btn:before {
+   
+   
+  }
+  
+  .btn:hover:before {
+    
+    
+  }
+  
+  .btn:before {
+   
+  }
+  
+  .btn:hover {
+    background: #ec0f94;
+    color: #373B44;
+  
+  }
+
+}
+
