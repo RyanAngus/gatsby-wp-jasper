@@ -22,7 +22,7 @@ const Blog = ({ data }) => {
             <div className={styles.postContent} dangerouslySetInnerHTML={{ __html: blogItem.bodyNode.childMarkdownRemark.html }} />
 
           </div>
-        
+         
         ))}
   
       </div>

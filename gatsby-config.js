@@ -20,7 +20,7 @@ module.exports = {
         disableLiveReload: false,
       },
     },
-    {
+    { 
       resolve: `gatsby-source-filesystem`,
       options: {
         // The unique name for each instance
