@@ -7,20 +7,32 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */ 
+
+require("dotenv").config()
+
 module.exports = {
   plugins: [
-    'gatsby-plugin-netlify',
     {
-      resolve: `gatsby-source-wordpress`,
+      resolve: "gatsby-source-datocms",
       options: {
-        /*
-         * The full URL of the WordPress site's GraphQL API.
-         * Example : 'https://www.example-site.com/graphql'
-         */
-        url: `http://gatsbyjasper.x10.mx/wp/graphql`,
+        apiToken: process.env.DATO_API_TOKEN,
+        preview: false,
+        disableLiveReload: false,
       },
     },
-    
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        // The unique name for each instance
+        name: `pages`,
+        // Path to the directory
+        path: `${__dirname}/src/pages/`,
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {},
+    },
   
   ],
   siteMetadata: {

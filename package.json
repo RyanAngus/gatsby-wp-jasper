@@ -14,8 +14,8 @@
   },
   "dependencies": {
     "gatsby": "^5.3.3",
+    "gatsby-source-datocms": "^5.1.2",
     "gatsby-source-filesystem": "^5.9.0",
-    "gatsby-source-wordpress": "^7.11.0",
     "gatsby-transformer-remark": "^6.9.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"

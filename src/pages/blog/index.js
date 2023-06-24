@@ -7,22 +7,24 @@ import { graphql } from 'gatsby';
 
 
 const Blog = ({ data }) => {
+  const blogItems = data.allDatoCmsBlogPost.edges;
+
   return (
     <div>
     <Navbar />
       <div className={styles.blog}>
         <h2 className={styles.title}>Blog Posts</h2>
-        {data.allWpPost.nodes.map((node) => (
-          <div key={node.id}>
-            <h1 className={styles.postTitle}>{node.title}</h1>
-            {node.featuredImage && (
-              <img className={styles.postImage} src={node.featuredImage.node.sourceUrl} alt={node.title} />
-            )}
-            <div className={styles.postContent} dangerouslySetInnerHTML={{ __html: node.content }} />
-            <br />
-            <hr />
+        {blogItems.map(({ node: blogItem }) => (
+          <div key={blogItem.id}>
+            <h1 className={styles.postTitle}>{blogItem.title}</h1>
+            <h2 className={styles.postDate}>Date: {blogItem.date}</h2>
+            <img className={styles.postImage} src={blogItem.image.url} alt={blogItem.title} />
+            <div className={styles.postContent} dangerouslySetInnerHTML={{ __html: blogItem.bodyNode.childMarkdownRemark.html }} />
+
           </div>
+        
         ))}
+  
       </div>
     <Footer />
     </div>
@@ -33,23 +35,26 @@ export default Blog
 
 //export page query
 export const query = graphql`
-query {
-  allWpPost(sort: { fields: [date] }) {
-    nodes {
-      id
-      title
-      featuredImage {
-        node {
-          id
-          sourceUrl
+query MyQuery {
+  allDatoCmsBlogPost(sort: {date: DESC}) {
+    edges {
+      node {
+        title
+        id
+        image {
+          url
         }
+        body
+        bodyNode {
+          childMarkdownRemark {
+            html
+          }
+        }
+        date
       }
-      excerpt
-      content
-      slug
-      date(formatString: "MMMM DD, YYYY")
     }
   }
 }
+
 `
 
