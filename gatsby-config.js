@@ -12,6 +12,7 @@ require("dotenv").config()
 
 module.exports = {
   plugins: [
+    'gatsby-plugin-netlify',
     {
       resolve: "gatsby-source-datocms",
       options: {
