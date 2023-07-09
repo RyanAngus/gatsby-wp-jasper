@@ -20,7 +20,7 @@ const Blog = ({ data }) => {
             <h2 className={styles.postDate}>Date: {blogItem.date}</h2>
             <img className={styles.postImage} src={blogItem.image.url} alt={blogItem.title} />
             <div className={styles.postContent} dangerouslySetInnerHTML={{ __html: blogItem.bodyNode.childMarkdownRemark.html }} />
-
+            <hr className={styles.hr} />
           </div>
          
         ))}

@@ -1,15 +1,5 @@
 
-.blog {
-  text-align: left;
-}
-.blog > h2 {
-  font-size: 3rem;
-  margin: 3rem 0;
-}
-.blog > h3 {
-  font-size: 2rem;
-  font-weight: 400;
-}
+
 
 .title {
 text-align: center;
@@ -19,18 +9,26 @@ padding: 1rem;
 }
 
 .postTitle {
-margin-top: 1rem;
+margin-top: 3rem;
 margin-bottom: 2rem;
 }
 
 .postImage {
+margin-top: 2rem;
+margin-bottom: 2rem;
 width: 400px;
 border-radius: 12px;
 }
 
 .postContent {
+  margin-left: 1rem;
   line-height: 2;
 }
+
+.hr {
+  margin-top: 2rem;
+}
+
 
 @media only screen and (max-width: 600px) {
   .postImage {
